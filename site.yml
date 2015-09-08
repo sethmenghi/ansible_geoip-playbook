@@ -1,0 +1,7 @@
+--
+
+- hosts: testservers
+
+  roles:
+    - update
+    - python

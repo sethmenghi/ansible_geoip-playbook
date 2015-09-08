@@ -1,0 +1,16 @@
+---
+
+- name: Add the geopip repository
+  apt_repository: repo='ppa:maxmind/ppa' update_cache=yes
+
+- name: Install from maxmind
+  apt: name={{ item }} state=latest
+  with_items:
+   - geoip-bin 
+   - libgeoip-dev
+   - libgeoip1
+
+- name: Install python package
+  pip: name={{ item }} state=latest
+  with_items:
+   - geoip
