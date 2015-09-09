@@ -7,7 +7,7 @@ Ansible playbook to install geoip python module and its dependencies.
 
 #### Hosts
 
-1. Edit geoip-playbook/hosts to resemble your actual host servers to appear like so:
+- Edit geoip-playbook/hosts to resemble your actual host servers to appear like so:
 
 [servers]
 
@@ -18,7 +18,7 @@ Ansible playbook to install geoip python module and its dependencies.
 
 ansible_ssh_user/ansible_ssh_pass is optional
 
-2. Then change hosts in geoip-playbook/site.yml from hosts: webservers to resemble:
+- Then change hosts in geoip-playbook/site.yml from hosts: webservers to resemble:
 
 hosts: servers
 
