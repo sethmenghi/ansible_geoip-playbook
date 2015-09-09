@@ -9,6 +9,7 @@
    - geoip-bin 
    - libgeoip-dev
    - libgeoip1
+   - python-dev
 
 - name: Install python package
   pip: name={{ item }} state=latest

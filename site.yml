@@ -1,7 +1,8 @@
 ---
 
 - hosts: testservers
-
+  remote_user: datauser
+  sudo: yes
   roles:
     - update
-    - python
+    - geoip
